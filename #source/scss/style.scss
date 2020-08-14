@@ -8,7 +8,7 @@
 
 // Адаптивный шрифт
 // Указать величину шрифта на минимальном экране и на макетном размере
-$maxWidth: 1280;
+$maxWidth: 1924;
 @mixin adaptive-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
@@ -16,6 +16,7 @@ $maxWidth: 1280;
 }
 
 $main: #513cdc;
+$color2: #f2f2f2;
 
 $lg: 1370px;
 $md: 1199px;
@@ -29,11 +30,13 @@ html {
 body {
 	font-size: 18px;
 	font-family: "Montserrat", sans-serif;
+	// background: url("../../images/system_img/bg-main-lines.png") top no-repeat;
 }
 
 .container {
 	max-width: 1357px;
 	margin: 0 auto;
+	padding: 0 10px;
 
 	@media (max-width: $lg) {
 		max-width: 1150px;
@@ -41,16 +44,33 @@ body {
 	@media (max-width: $md) {
 		max-width: 950px;
 	}
+	@media (max-width: $sm) {
+		max-width: 750px;
+	}
 }
 
 .wrapper {
 	overflow: hidden;
+	max-width: 100vw;
+}
+
+.bg-lines {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.solutions {
+	height: 100px;
+	background-color: $color2;
 }
 
 // Подключение общих блоков
 @import "blocks";
 
 // Header
+@import "main-head";
 @import "header";
 
 // Footer
