@@ -1,0 +1,59 @@
+.block3 {
+	background: $color2;
+	padding: 100px 0 260px 0;
+
+	@media (max-width: $sm) {
+		padding: 40px 0 50px 0;
+	}
+	&__wrapper {
+		display: flex;
+	}
+
+	&__body {
+		flex: 0 1 50%;
+		text-align: right;
+
+		@media (max-width: $sm) {
+			flex: 1 1 auto;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		@include adaptive-font(60, 42);
+		line-height: 121%;
+
+		color: #181818;
+
+		margin: 0 0 90px 0;
+	}
+
+	&__text {
+		margin: 0 0 50px 0;
+
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 28px;
+
+		color: #000000;
+	}
+
+	&__btn {
+	}
+
+	&__img {
+		flex: 0 1 50%;
+		transform: translate(50px, 0);
+		align-self: center;
+		img {
+			max-width: 100%;
+		}
+
+		@media (max-width: $sm) {
+			display: none;
+		}
+	}
+}
+.btn {
+}
