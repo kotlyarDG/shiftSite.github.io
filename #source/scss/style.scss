@@ -64,7 +64,8 @@ body {
 }
 
 .btn {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	padding: 15px 8px 15px 40px;
 
 	background: $color2;
@@ -79,11 +80,10 @@ body {
 	}
 
 	div {
-		display: inline-flex;
+		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin: 0 0 0 28px;
-		transform: translate(0, 3px);
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
@@ -95,6 +95,14 @@ body {
 	}
 }
 
+.title {
+	font-weight: bold;
+	@include adaptive-font(60, 36);
+	line-height: 121%;
+
+	color: #181818;
+}
+
 // Подключение общих блоков
 @import "blocks";
 
@@ -103,5 +111,6 @@ body {
 @import "header";
 @import "solutions";
 @import "block3";
+@import "cases";
 // Footer
 @import "footer";

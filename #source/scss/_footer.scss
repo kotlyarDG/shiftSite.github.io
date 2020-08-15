@@ -87,10 +87,7 @@
 .instagram-footer {
 	display: flex;
 	flex-wrap: wrap;
-
-	@media (max-width: $sm) {
-		max-width: 300px;
-	}
+	max-width: 300px;
 
 	&__img {
 		width: 60px;

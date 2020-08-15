@@ -20,12 +20,6 @@
 	}
 
 	&__title {
-		font-weight: bold;
-		@include adaptive-font(60, 42);
-		line-height: 121%;
-
-		color: #181818;
-
 		margin: 0 0 90px 0;
 	}
 
