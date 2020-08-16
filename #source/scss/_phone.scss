@@ -1,0 +1,72 @@
+.phone {
+	padding: 220px 0 180px 0;
+	&__container {
+		max-width: 884px;
+		margin: 0 auto;
+		padding: 58px 68px 64px 68px;
+		font-size: 34px;
+		line-height: 41px;
+
+		text-align: center;
+		position: relative;
+
+		color: #ffffff;
+		background: url("../../images/system_img/bg-call.jpg") center / cover no-repeat;
+		border-radius: 15px;
+
+		@media (max-width: $xs) {
+			padding: 58px 15px 64px 15px;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(81, 60, 220, 0.6);
+			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+			border-radius: 15px;
+			z-index: 1;
+		}
+	}
+
+	&__body {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__title {
+		font-weight: 300;
+	}
+
+	&__text {
+		margin: 21px 0 0 0;
+		font-weight: bold;
+	}
+
+	&__btn {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		margin: 50px 0 0 0;
+		padding: 18px 62px 18px 32px;
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+		border-radius: 46px;
+		background: #fff url("../../images/system_img/phone-call.svg") 205px 13px no-repeat;
+
+		transition: 0.3s;
+
+		&:hover {
+			transform: translate(0, -5px) scale(1.05);
+		}
+		span {
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 187.4%;
+			color: #181818;
+		}
+	}
+}

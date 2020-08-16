@@ -8,6 +8,11 @@
 	}
 	a {
 		color: #ffffff;
+		transition: 0.3s;
+
+		&:hover {
+			transform: translate(0, -5px) scale(1.05);
+		}
 	}
 	&__container {
 	}

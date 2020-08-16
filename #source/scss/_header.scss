@@ -1,7 +1,7 @@
 .header {
 	background-color: $color2;
 	margin: 25vh 0 4px 0;
-	border-top: 55px solid $color2;
+	border-top: 45px solid $color2;
 	border-top-left-radius: 20%;
 	border-top-right-radius: 20%;
 	padding: 0 0 45px 0;
@@ -32,12 +32,16 @@
 		align-items: center;
 		background-color: #482ad0;
 		position: absolute;
-		top: -7px;
+		top: 0;
 		right: -12px;
 		opacity: 1;
 		visibility: visible;
 		transition: all 0.3s ease 0s;
 		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			transform: translate(0, -5px) scale(1.05);
+		}
 		img {
 			max-width: 100%;
 		}
@@ -53,7 +57,7 @@
 		opacity: 0;
 		transition: all 0.3s ease 0s;
 		position: absolute;
-		top: -7px;
+		top: 0;
 		right: -136px;
 		visibility: hidden;
 		input {
@@ -92,6 +96,16 @@
 	}
 
 	&__link {
+		padding: 10px 20px;
+		border-radius: 20px;
+		transition: 0.3s;
+		&:hover {
+			background-color: $main;
+
+			li {
+				color: #fff;
+			}
+		}
 		li {
 			font-weight: 500;
 			font-size: 18px;

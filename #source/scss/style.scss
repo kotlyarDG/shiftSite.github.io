@@ -94,6 +94,10 @@ body {
 			transform: translate(3px, 0);
 		}
 	}
+	transition: 0.3s;
+	&:hover {
+		transform: translate(0, -5px) scale(1.05);
+	}
 }
 
 .title {
@@ -115,5 +119,8 @@ body {
 @import "cases";
 @import "video";
 @import "reviews";
+@import "rates";
+@import "answer";
+@import "phone";
 // Footer
 @import "footer";
