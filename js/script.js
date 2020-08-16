@@ -45,5 +45,20 @@ $(document).ready(function () {
 		$('.item-info.f_' + cat).fadeToggle();
 	});
 
+	$('.rates__items--year').fadeOut(300);
 
+	$('.selector-rates__item--month').click(function (event) {
+		if (!$(this).hasClass('_active')) {
+			$('.selector-rates__item').toggleClass('_active');
+			$('.rates__items--year').fadeToggle(300);
+			$('.rates__items--month').fadeToggle(300);
+		}
+	});
+	$('.selector-rates__item--year').click(function (event) {
+		if (!$(this).hasClass('_active')) {
+			$('.selector-rates__item').toggleClass('_active');
+			$('.rates__items--month').fadeToggle(300);
+			$('.rates__items--year').fadeToggle(300);
+		}
+	});
 });
