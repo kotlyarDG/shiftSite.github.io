@@ -82,7 +82,7 @@
 			}
 			button {
 				&:after {
-					content: url("../../images/system_img/search-active.svg");
+					content: url("../images/system_img/search-active.svg");
 					position: absolute;
 					top: 11px;
 					left: 11px;
@@ -132,7 +132,7 @@
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		background: $main url("../../images/system_img/bg-main-lines.svg") center / cover no-repeat;
+		background: $main url("../images/system_img/bg-main-lines.svg") center / cover no-repeat;
 		z-index: 5;
 		padding: 10vh 60px;
 		overflow: auto;

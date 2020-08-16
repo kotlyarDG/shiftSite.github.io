@@ -1,5 +1,9 @@
 .phone {
 	padding: 220px 0 180px 0;
+
+	@media (max-width: $xs) {
+		padding: 80px 0 60px 0;
+	}
 	&__container {
 		max-width: 884px;
 		margin: 0 auto;
@@ -11,7 +15,7 @@
 		position: relative;
 
 		color: #ffffff;
-		background: url("../../images/system_img/bg-call.jpg") center / cover no-repeat;
+		background: url("../images/system_img/bg-call.jpg") center / cover no-repeat;
 		border-radius: 15px;
 
 		@media (max-width: $xs) {
@@ -55,7 +59,7 @@
 		padding: 18px 62px 18px 32px;
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 		border-radius: 46px;
-		background: #fff url("../../images/system_img/phone-call.svg") 205px 13px no-repeat;
+		background: #fff url("../images/system_img/phone-call.svg") 205px 13px no-repeat;
 
 		transition: 0.3s;
 

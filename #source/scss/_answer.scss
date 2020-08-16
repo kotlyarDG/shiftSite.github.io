@@ -1,6 +1,10 @@
 .answer {
 	padding: 180px 0 15px 0;
 
+	@media (max-width: $xs) {
+		padding: 60px 0 15px 0;
+	}
+
 	&__title {
 		text-align: right;
 	}
@@ -8,6 +12,9 @@
 	&__wrapper {
 		margin: 100px 0 0 0;
 		display: flex;
+		@media (max-width: $xs) {
+			margin: 50px 0 0 0;
+		}
 	}
 
 	&__items {
@@ -54,7 +61,7 @@
 		color: #000000;
 		position: relative;
 		&:before {
-			content: url("../../images/system_img/Vector-answer.svg");
+			content: url("../images/system_img/Vector-answer.svg");
 			position: absolute;
 			top: 3px;
 			right: 0;
@@ -84,6 +91,7 @@
 	}
 
 	&__text {
+		font-family: "Rubik", sans-serif;
 		padding: 26px 0 0 0;
 		font-weight: 300;
 		font-size: 24px;
