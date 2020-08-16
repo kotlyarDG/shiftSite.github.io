@@ -114,6 +114,11 @@ body {
   width: 100%;
 }
 
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -155,17 +160,28 @@ body {
   background: #5747e4;
 }
 
-.btn div img {
+.btn div svg {
   max-width: 100%;
-  -webkit-transform: translate(3px, 0);
-      -ms-transform: translate(3px, 0);
-          transform: translate(3px, 0);
+  fill: #f2f2f2;
 }
 
 .btn:hover {
   -webkit-transform: translate(0, -5px) scale(1.05);
       -ms-transform: translate(0, -5px) scale(1.05);
           transform: translate(0, -5px) scale(1.05);
+  background-color: #513cdc;
+}
+
+.btn:hover span {
+  color: #fff;
+}
+
+.btn:hover div {
+  background: #fff;
+}
+
+.btn:hover div svg {
+  fill: #513cdc;
 }
 
 .title {
