@@ -252,6 +252,10 @@ path {
           flex-direction: column;
 }
 
+.main__logo svg {
+  fill: #f2f2f2;
+}
+
 .main__body {
   display: -webkit-box;
   display: -ms-flexbox;
