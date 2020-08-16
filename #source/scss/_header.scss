@@ -8,6 +8,9 @@
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 	position: relative;
 	z-index: 2;
+	@media (max-width: $sm) {
+		display: none;
+	}
 	&__container {
 		max-width: 930px;
 		margin: 0 auto;
@@ -112,6 +115,50 @@
 			line-height: 21px;
 
 			color: #201361;
+		}
+	}
+}
+
+.burger__menu {
+	display: none;
+
+	@media (max-width: $sm) {
+		display: block;
+		transition: 0.5s;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: -100%;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: $main url("../../images/system_img/bg-main-lines.svg") center / cover no-repeat;
+		z-index: 5;
+		padding: 10vh 60px;
+		overflow: auto;
+
+		.menu__list {
+			display: flex;
+			flex-direction: column;
+			margin: 25px 0 0 0;
+		}
+
+		.menu__link {
+			padding: 10px;
+			li {
+				font-weight: 500;
+				font-size: 30px;
+				line-height: 35px;
+
+				color: #fff;
+			}
+		}
+		&._active {
+			top: 0;
+			transition: 0.5s;
+			transform: translate(0, 0);
+			opacity: 1;
+			visibility: visible;
 		}
 	}
 }

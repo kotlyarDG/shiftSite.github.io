@@ -4,8 +4,11 @@
 }
 .main {
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	padding: 10vh 0 0 0;
+	@media (max-width: $xs) {
+		padding: 10vh 10px 40px 10px;
+	}
 	&__flex {
 		display: flex;
 		height: 100%;
@@ -19,6 +22,8 @@
 		display: flex;
 		color: $color2;
 		margin: 15vh 0 0 0;
+		position: relative;
+		z-index: 2;
 
 		@media (max-width: $sm) {
 			flex-direction: column;
@@ -47,6 +52,9 @@
 
 	&__buttons {
 		margin: 40px 0 0 0;
+		@media (max-width: 500px) {
+			text-align: center;
+		}
 	}
 
 	&__btn {
@@ -56,6 +64,10 @@
 		display: inline-block;
 		margin: 0 0 0 32px;
 
+		@media (max-width: 500px) {
+			display: block;
+			margin: 30px 0 0 0;
+		}
 		span {
 			font-weight: 500;
 			font-size: 16px;
@@ -95,12 +107,12 @@
 			max-width: 50%;
 		}
 
+		@media (max-width: 500px) {
+			display: none;
+		}
+
 		img {
 			max-width: 100%;
 		}
 	}
-}
-.container {
-}
-.btn {
 }
