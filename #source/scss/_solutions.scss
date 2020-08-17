@@ -67,6 +67,33 @@
 		flex-direction: column;
 	}
 
+	&__vector {
+		width: 17px;
+		height: 17px;
+		border-radius: 50%;
+		background-color: $color2;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin: 27px 0 0 0;
+		transition: 0.3s;
+		svg {
+			fill: $main;
+		}
+		@media (max-width: $xs) {
+			display: inline-block;
+			margin: 0 0 0 40px;
+		}
+		@media (max-width: 384px) {
+			margin: 0 0 0 15px;
+		}
+		@media (max-width: 356px) {
+			margin: 0 0 0 5px;
+		}
+	}
+
 	&__item {
 		margin: 0 15px 30px 15px;
 		padding: 20px 0 16px 0;
@@ -91,14 +118,6 @@
 			font-size: 20px;
 			line-height: 24px;
 			text-align: center;
-
-			&:after {
-				content: url("../images/system_img/solutions/Vector.svg");
-				display: block;
-				text-align: center;
-				margin: 27px 0 0 0;
-				transition: 0.3s;
-			}
 		}
 
 		@media (max-width: $xs) {
@@ -118,26 +137,14 @@
 					margin: 0 5px 0 0;
 				}
 			}
-			p {
-				&:after {
-					display: inline-block;
-					margin: 0 0 0 40px;
-					@media (max-width: 384px) {
-						margin: 0 0 0 15px;
-					}
-					@media (max-width: 356px) {
-						margin: 0 0 0 5px;
-					}
-				}
-			}
 		}
 
 		&:hover {
-			p {
-				&:after {
-					content: url("../images/system_img/solutions/Vector-h.svg");
-					transform: translate(0, 2px);
-					transition: 0.3s;
+			.items-solution__vector {
+				background-color: $main;
+				transform: translate(0, -3px);
+				svg {
+					fill: #fff;
 				}
 			}
 		}
@@ -149,15 +156,8 @@
 		img {
 			margin: 0 0 55px 0;
 		}
-
-		p {
-			&:before {
-				margin: 0 0 55px 0;
-			}
-
-			&:after {
-				margin: 51px 0 0 0;
-			}
+		.items-solution__vector {
+			margin: 51px 0 0 0;
 		}
 
 		@media (max-width: $xs) {
@@ -170,11 +170,9 @@
 				display: inline-block;
 				margin: 0 40px 0 0;
 			}
-			p {
-				&:after {
-					display: inline-block;
-					margin: 0 0 0 40px;
-				}
+			.items-solution__vector {
+				display: inline-block;
+				margin: 0 0 0 40px;
 			}
 		}
 	}
@@ -195,19 +193,15 @@
 				margin: 0 5px 0 0;
 			}
 		}
-		p {
-			&:after {
-				display: inline-block;
-				width: 17px;
-				margin: 0 0 0 40px;
-				transition: 0.3s;
+		.items-solution__vector {
+			display: inline-flex;
+			margin: 0 0 0 40px;
 
-				@media (max-width: 384px) {
-					margin: 0 0 0 15px;
-				}
-				@media (max-width: 356px) {
-					margin: 0 0 0 15px;
-				}
+			@media (max-width: 384px) {
+				margin: 0 0 0 15px;
+			}
+			@media (max-width: 356px) {
+				margin: 0 0 0 15px;
 			}
 		}
 	}
