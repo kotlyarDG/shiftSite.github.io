@@ -1,6 +1,34 @@
 // Проверка, загрузилась ли страница
 $(document).ready(function () {
 
+	$('.personal-solution__items').slick({
+		arrows: true,
+		slidesToScroll: 1,
+		slidesToShow: 5,
+		responsive: [
+
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
+	});
+
 	$('.header__burger').click(function (event) {
 		$('.header__burger,.burger__menu').toggleClass('_active')
 		$('body').toggleClass('_lock')
@@ -205,4 +233,6 @@ $(document).ready(function () {
 				Element.prototype.msMatchesSelector;
 		}
 	})();
+
+
 });
