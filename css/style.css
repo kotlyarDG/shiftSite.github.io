@@ -2080,7 +2080,7 @@ path {
 }
 
 .phone__container:before {
-  content: url("../../images/system_img/bg-call.svg");
+  content: url("../images/system_img/bg-call.svg");
   display: block;
   position: absolute;
   top: -10%;
