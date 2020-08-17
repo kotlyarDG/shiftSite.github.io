@@ -914,7 +914,7 @@ path {
 }
 
 .items-solution__item:hover p:after {
-  content: url("../../images/system_img/solutions/Vector-h.svg");
+  content: url("../images/system_img/solutions/Vector-h.svg");
   -webkit-transform: translate(0, 2px);
       -ms-transform: translate(0, 2px);
           transform: translate(0, 2px);
