@@ -1137,6 +1137,7 @@ path {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .personal-solution__img {
