@@ -842,7 +842,9 @@ path {
 
 @media (max-width: 768px) {
   .items-solution__vector {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     margin: 0 0 0 40px;
   }
 }
@@ -969,7 +971,9 @@ path {
     margin: 0 40px 0 0;
   }
   .items-solution__item--column .items-solution__vector {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     margin: 0 0 0 40px;
   }
 }

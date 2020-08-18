@@ -83,7 +83,7 @@
 			fill: $main;
 		}
 		@media (max-width: $xs) {
-			display: inline-block;
+			display: inline-flex;
 			margin: 0 0 0 40px;
 		}
 		@media (max-width: 384px) {
@@ -171,7 +171,7 @@
 				margin: 0 40px 0 0;
 			}
 			.items-solution__vector {
-				display: inline-block;
+				display: inline-flex;
 				margin: 0 0 0 40px;
 			}
 		}
