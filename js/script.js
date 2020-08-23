@@ -234,5 +234,42 @@ $(document).ready(function () {
 		}
 	})();
 
+	$('.body-crm__slider-fade').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: $('.body-crm__arrow--prev'),
+		nextArrow: $('.body-crm__arrow--next'),
+		fade: true,
+		asNavFor: '.body-crm__slider'
+	});
+	$('.body-crm__slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.body-crm__slider-fade',
+		centerMode: true,
+		focusOnSelect: true,
+		arrows: false,
+		responsive: [
+
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2,
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
+	});
 
 });
